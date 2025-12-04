@@ -120,3 +120,8 @@
 # Core Libs
 -keep class com.nimbusds.jwt.**{ *; }
 -keep class com.nimbusds.jose.**{ *; }
+
+# hacking around required certificate extended keys
+-keepclassmembers class eu.europa.ec.eudi.iso18013.transfer.readerauth.profile.ProfileValidation {
+    public static final eu.europa.ec.eudi.iso18013.transfer.readerauth.profile.ProfileValidation DEFAULT;
+}

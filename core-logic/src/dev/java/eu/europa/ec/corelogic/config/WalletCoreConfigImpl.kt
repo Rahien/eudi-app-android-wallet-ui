@@ -68,6 +68,9 @@ internal class WalletCoreConfigImpl(
                         R.raw.pidissuerca02_nl,
                         R.raw.pidissuerca02_pt,
                         R.raw.pidissuerca02_ut,
+                        R.raw.decide,
+                        R.raw.isrgrootx1,
+                        R.raw.isrgrootx2,
                         R.raw.dc4eu
                     )
                 }

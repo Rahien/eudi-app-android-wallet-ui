@@ -15,5 +15,14 @@
   -->
 
 <network-security-config>
-    <base-config cleartextTrafficPermitted="false" />
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="@raw/isrgrootx1" />
+            <certificates src="@raw/isrgrootx2" />
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">e8.c.lencr.org</domain>
+    </domain-config>
 </network-security-config>
