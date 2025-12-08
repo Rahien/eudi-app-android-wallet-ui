@@ -135,7 +135,7 @@ class Application : Application() {
                 MandatoryExtensions(),
                 Period(),
                 SignatureAlgorithm(),
-                SubjectKey(),
+                SubjectKeyRfc7093Validator(),
             ),
         ))
     }

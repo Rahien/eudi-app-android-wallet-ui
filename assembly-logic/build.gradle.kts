@@ -72,6 +72,11 @@ dependencies {
     api(project(ProximityFeature.path))
     api(project(IssuanceFeature.path))
 
+    dependencies {
+        implementation("org.bouncycastle:bcprov-jdk18on:1.83")
+        implementation("org.bouncycastle:bcpkix-jdk18on:1.83")
+    }
+
     // Modules Kover Report
     koverModules.forEach {
         kover(project(it.key.path)) {
